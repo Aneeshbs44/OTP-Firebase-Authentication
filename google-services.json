@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "602608547486",
+    "project_id": "otpauth-e9cf2",
+    "storage_bucket": "otpauth-e9cf2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602608547486:android:040a7f372c645ff6cbad8f",
+        "android_client_info": {
+          "package_name": "com.aneeshbs112.project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWt5MANprvInANgvnAdfXEfooMvvA_aew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
