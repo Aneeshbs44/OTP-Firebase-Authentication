@@ -51,10 +51,10 @@ export default function Login()
                 <Text
                   style={{
                     marginBottom: 20,
-                    fontSize: 18,
+                    fontSize: 28,
                   }}
                  >
-                  Enter your name
+                  Enter your PhoneNumber
                   </Text>
                   <TextInput
                     style={{
@@ -65,7 +65,7 @@ export default function Login()
                     marginBottom: 30,
                     paddingHorizontal: 10,
                     }}
-                    placeholder="e.g., +1 650-555-3434"
+                    placeholder="e.g., +91 xxxxx xxxxx"
                     value= {phoneNumber}
                     onChangeText={setPhoneNumber}
                     />
@@ -86,10 +86,46 @@ export default function Login()
                             </>
                         
             ):(
-              
-            )
-              
+              <>
+              <Text
+                  style = {{
+                    marginBottom:20,
+                    fontSize:18,
+                  }}
+                  >
+                    Enter the code sent to you phone
+                    /</Text>
+                    <TextInput
+                    style= {{
+                      height:50,
+                      width:"100%",
+                      borderColor:"black",
+                      borderWidth:1,
+                      marginBottom:30,
+                      paddingHorizontal:10
+                    }}
+                    placeholder="Enter code"
+                    value={code}
+                    onChangeText={setCode}
+                    />
+                    <TouchableOpacity
+                    onPress={confirmcode}
+                    style={{
+                    backgroundColor: "#841584",
+                    padding: 10,
+                    borderRadius: 5,
+                    marginBottom: 20,
+                    alignItems: "center",
+                    }}
+                    >
+                      <Text style = {{color:"white", fontSize:32, fontWeight:"bold"}}>Confirm Code</Text>
+                      </TouchableOpacity>
 
-            }
-      )
+                      
+              </>
+            )}
+            </View>  
+
+           
+      );
     }
