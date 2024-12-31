@@ -14,7 +14,7 @@ export default function Login()
         const confirmation = await auth().signInWithPhoneNumber(phoneNumber);
         setConfirm(confirmation);
       }catch(error){
-        console.log("Error sending code",err);
+        console.log("Error sending code",error);
       }
       };
       const confirmcode = async() =>{
